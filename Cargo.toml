@@ -1,0 +1,14 @@
+[package]
+name = "pouch"
+version = "0.1.0"
+authors = ["Horst Schwarz <horst.schwarz@joydev.com>"]
+edition = "2018"
+
+description = "PouchDB bindings"
+documentation = "https://docs.rs/pouch"
+homepage = "https://pouch.rs"
+repository = "https://github.com/joydev-horst/pouch"
+license = "MIT"
+license-file = "LICENSE"
+
+[dependencies]
