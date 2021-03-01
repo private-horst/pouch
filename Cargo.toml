@@ -1,10 +1,10 @@
 [package]
 name = "pouch"
-version = "0.0.2"
+version = "0.0.3"
 authors = ["Horst Schwarz <horst.schwarz@joydev.com>"]
 edition = "2018"
 
-description = "PouchDB bindings (NOT STARTED YET)"
+description = "PouchDB bindings (EARLY ALPHA)"
 documentation = "https://docs.rs/pouch"
 homepage = "https://pouch.rs"
 repository = "https://github.com/joydev-horst/pouch"
