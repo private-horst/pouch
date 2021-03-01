@@ -10,4 +10,5 @@ homepage = "https://pouch.rs"
 repository = "https://github.com/joydev-horst/pouch"
 license = "MIT"
 
-[dependencies]
+[lib]
+crate-type = ["cdylib", "rlib"]
