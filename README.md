@@ -14,7 +14,7 @@ Build it:
 wasm-pack build examples/yew --target web --out-name wasm --out-dir ./html/static
 ```
 
-And run it with [caddy](https://www.caddyserver.com):
+And run it with [caddy](https://caddyserver.com/):
 
 ```shell
 caddy file-server --root examples/yew/html
