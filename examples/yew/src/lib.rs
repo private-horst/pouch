@@ -1,6 +1,8 @@
 use wasm_bindgen::prelude::*;
 use yew::prelude::*;
 
+use pouch;
+
 struct Model {
     link: ComponentLink<Self>,
     value: i64,
@@ -37,6 +39,7 @@ impl Component for Model {
             <div>
                 <button onclick=self.link.callback(|_| Msg::AddOne)>{ "+1" }</button>
                 <p>{ self.value }</p>
+                <p>{ pouch::get_version() }</p>
                 </div>
         }
     }

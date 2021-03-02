@@ -1,7 +1,6 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
+use wasm_bindgen::prelude::*;
+
+#[wasm_bindgen]
+pub fn get_version() -> String {
+    "0.0.3-alpha".into()
 }

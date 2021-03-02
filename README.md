@@ -1,6 +1,6 @@
-# pouch - Rust bindings for PouchDB (EARLY ALPHA)
+# Pouch - Rust bindings for PouchDB (ALPHA)
 
-NOTE: VERY EARLY STAGE, NOT READY FOR USE YET!
+NOTE: VERY EARLY STAGE, NOT READY FOR USE!
 
 Rust bindings to make PouchDB available for usage with Yew and other browser-based Rust frameworks.
 
