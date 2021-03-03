@@ -56,6 +56,7 @@ dependencies = [
 name = "pouch"
 version = "0.0.3-alpha"
 dependencies = [
+ "js-sys",
  "wasm-bindgen",
  "wasm-bindgen-test",
 ]

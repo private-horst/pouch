@@ -1,0 +1,14 @@
+{
+    "name": "pouch",
+    "version": "0.0.3-alpha",
+    "description": "Rust bindings for PouchDB",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/joydev-horst/pouch.git"
+    },
+    "author": "Horst Schwarz <horst.schwarz@joydev.com>",
+    "license": "MIT",
+    "dependencies": {
+        "pouchdb": "7.2.2"
+    }
+}
