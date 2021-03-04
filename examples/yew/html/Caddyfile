@@ -1,0 +1,11 @@
+{
+    admin off
+}
+
+http://localhost:8080 {
+    file_server
+    root * examples/yew/html
+    log {
+        level debug
+    }
+}

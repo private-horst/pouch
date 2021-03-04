@@ -4,6 +4,14 @@ NOTE: VERY EARLY STAGE, NOT READY FOR USE!
 
 Rust bindings to make PouchDB available for usage with Yew and other browser-based Rust frameworks.
 
+## Test
+
+Launch all <code>wasm-bindgen-test</code> based tests with Node.js:
+
+```shell
+wasm-pack test --node
+```
+
 ## Examples
 
 ### Yew
@@ -16,15 +24,9 @@ Build it:
 wasm-pack build examples/yew --target web --out-name wasm --out-dir ./html/static
 ```
 
-Test it:
-
-```shell
-wasm-pack test --node
-```
-
 And run it with [Caddy](https://caddyserver.com/):
 
 ```shell
-caddy file-server --root examples/yew/html
+caddy run --config examples/yew/html/Caddyfile
 ```
 
