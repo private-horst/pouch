@@ -21,7 +21,7 @@ A simple Yew app using Pouch.
 Build it ...
 
 ```shell
-wasm-pack build examples/yew --target web --out-name wasm --out-dir ./html/static
+wasm-pack build examples/yew --target web --out-name pouch-yew-example --out-dir ./html/static
 ```
 
 ... and run it with [Caddy](https://caddyserver.com/) ...
