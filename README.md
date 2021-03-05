@@ -16,5 +16,5 @@ wasm-pack test --node
 
 ### Yew
 
-Take a look to the [Yew example](/examples/yew/README.md).
+Take a look to the [Yew example](/examples/yew).
 
