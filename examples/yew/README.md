@@ -2,12 +2,17 @@
 
 A simple Yew app using Pouch.
 
-Change into the example directory ...
+Change into the example directory, ...
 ```shell
 cd examples/yew
 ```
 
-... andbuild and bundle the package with PouchDB ...
+... install all npm dependencies, ...
+```shell
+npm i
+```
+
+... build and bundle the package, ...
 ```shell
 rollup -c
 ```
