@@ -16,7 +16,7 @@ extern "C" {
 }
 
 pub fn get_version() -> String {
-    "0.0.3-alpha".into()
+    "0.0.4-alpha".into()
 }
 
 pub fn new_db() -> String {

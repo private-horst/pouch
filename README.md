@@ -1,6 +1,6 @@
 # Pouch - Rust bindings for PouchDB
 
-**__PAY ATTENTION__: NOT READY FOR USE**
+__**PAY ATTENTION: NOT READY FOR USE**__
 
 Rust bindings to make PouchDB available for usage with Yew and other browser-based Rust frameworks.
 
