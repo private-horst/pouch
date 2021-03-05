@@ -58,6 +58,7 @@ version = "0.0.4-alpha"
 dependencies = [
  "js-sys",
  "wasm-bindgen",
+ "wasm-bindgen-futures",
  "wasm-bindgen-test",
 ]
 

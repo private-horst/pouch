@@ -10,5 +10,6 @@ crate-type = ["cdylib", "rlib"]
 [dependencies]
 yew = "0.17"
 wasm-bindgen = "0.2"
+wasm-bindgen-futures = "0.4.21"
 pouch = { path = "../.." }
 

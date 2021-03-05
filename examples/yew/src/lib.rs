@@ -1,5 +1,7 @@
 use wasm_bindgen::prelude::*;
+use wasm_bindgen_futures::spawn_local;
 use yew::prelude::*;
+use yew::services::ConsoleService;
 
 use pouch;
 
@@ -35,12 +37,16 @@ impl Component for Model {
     }
 
     fn view(&self) -> Html {
+        spawn_local(async move {
+            let result = pouch::new_db().await.unwrap_throw();
+            ConsoleService::info(&format!("New DB result: {:?}", result));
+        });
+
         html! {
             <div>
                 <button onclick=self.link.callback(|_| Msg::AddOne)>{ "+1" }</button>
                 <p>{ self.value }</p>
                 <p>{ pouch::get_version() }</p>
-                <p>{ pouch::new_db() }</p>
                 </div>
         }
     }

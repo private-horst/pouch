@@ -313,6 +313,7 @@ version = "0.0.4-alpha"
 dependencies = [
  "js-sys",
  "wasm-bindgen",
+ "wasm-bindgen-futures",
 ]
 
 [[package]]
@@ -321,6 +322,7 @@ version = "0.0.1"
 dependencies = [
  "pouch",
  "wasm-bindgen",
+ "wasm-bindgen-futures",
  "yew",
 ]
 
