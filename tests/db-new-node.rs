@@ -4,5 +4,5 @@ use pouch::*;
 
 #[wasm_bindgen_test]
 fn test_get_version() {
-    assert_eq!(get_version(), "0.0.3-alpha");
+    assert_eq!(get_version(), "0.0.4-alpha");
 }
