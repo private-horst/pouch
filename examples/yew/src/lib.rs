@@ -40,6 +40,7 @@ impl Component for Model {
                 <button onclick=self.link.callback(|_| Msg::AddOne)>{ "+1" }</button>
                 <p>{ self.value }</p>
                 <p>{ pouch::get_version() }</p>
+                <p>{ pouch::new_db() }</p>
                 </div>
         }
     }

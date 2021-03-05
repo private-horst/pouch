@@ -2,6 +2,7 @@ import rust from "@wasm-tool/rollup-plugin-rust";
 import commonjs from "@rollup/plugin-commonjs";
 import nodeResolve from "@rollup/plugin-node-resolve";
 import json from "@rollup/plugin-json";
+import nodePolyfills from 'rollup-plugin-node-polyfills';
 
 export default {
     input: {
@@ -10,17 +11,18 @@ export default {
     output: {
         name: "bundle",
         dir: "html/static",
-        format: 'iife'
+        format: 'es'
     },
     plugins: [
         rust({
             serverPath: "/static/"
         }),
         json(),
+        nodePolyfills(),
         nodeResolve({
+            browser: true,
             jsnext: true,
-            main: true,
-            preferBuiltins: true
+            main: true
         }),
         commonjs({
             include: [ "node_modules/**" ]

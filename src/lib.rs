@@ -5,25 +5,21 @@ use wasm_bindgen::prelude::*;
 #[wasm_bindgen(module = "pouchdb")]
 extern "C" {
 
-    // #[wasm_bindgen(js_name = default)]
+    #[wasm_bindgen(js_name = default)]
     type PouchDB;
 
-    // TODO solve the "PouchDB is not a constructur" problem
-    // #[wasm_bindgen(constructor, js_class = default)]
-    #[wasm_bindgen(constructor)]
+    #[wasm_bindgen(constructor, js_class = default)]
     pub fn new(name: String) -> PouchDB;
 
-    // #[wasm_bindgen(method, js_class = default)]
-    #[wasm_bindgen(method)]
+    #[wasm_bindgen(method, js_class = default)]
     pub fn close(this: &PouchDB) -> Promise;
 }
 
-#[wasm_bindgen]
 pub fn get_version() -> String {
     "0.0.3-alpha".into()
 }
 
-#[wasm_bindgen]
-pub fn new_db() {
-    // let _db = PouchDB::new(String::from("Test"));
+pub fn new_db() -> String {
+    let _db = PouchDB::new(String::from("pouch-examples-yew-db"));
+    String::from("Yeheww")
 }
