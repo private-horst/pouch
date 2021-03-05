@@ -25,5 +25,5 @@ pub fn get_version() -> String {
 
 #[wasm_bindgen]
 pub fn new_db() {
-    //let _db = PouchDB::new(String::from("Test"));
+    // let _db = PouchDB::new(String::from("Test"));
 }
