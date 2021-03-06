@@ -2,12 +2,15 @@
 
 A simple Yew app using Pouch.
 
-- [x] Create new database
-- [ ] Get info about database
-- [ ] Store document
-- [ ] Change document
-- [ ] Delete document
-- [ ] Drop database
+Currently integrated Pouch features:
+
+- [x] Create/open database
+- [ ] Get database info
+- [ ] Create doc
+- [ ] Change doc
+- [ ] Delete doc
+- [ ] Close database
+- [ ] Delete database
 
 Change into the example directory, ...
 ```shell
