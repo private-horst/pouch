@@ -1,8 +1,12 @@
-use wasm_bindgen_test::*;
+//use wasm_bindgen_test::*;
 
 use pouch::*;
 
-#[wasm_bindgen_test]
-fn test_get_version() {
-    assert_eq!(get_version(), "0.0.4-alpha");
+// TODO make them work with 'wasm-pack test --node'
+//#[wasm_bindgen_test]
+async fn _test_get_name() {
+    let db_name = "tests_new_node";
+    let db = DB::new(db_name.to_string());
+    let info = db.info().await.unwrap();
+    assert_eq!(info.name, db_name);
 }

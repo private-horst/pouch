@@ -1,13 +1,12 @@
+//use wasm_bindgen_futures::spawn_local;
+//use yew::services::ConsoleService;
 use wasm_bindgen::prelude::*;
-use wasm_bindgen_futures::spawn_local;
 use yew::prelude::*;
-use yew::services::ConsoleService;
-
-use pouch;
 
 struct Model {
     link: ComponentLink<Self>,
     value: i64,
+    db: pouch::DB,
 }
 
 enum Msg {
@@ -18,7 +17,11 @@ impl Component for Model {
     type Message = Msg;
     type Properties = ();
     fn create(_: Self::Properties, link: ComponentLink<Self>) -> Self {
-        Self { link, value: 0 }
+        Self {
+            link,
+            value: 0,
+            db: pouch::DB::new("examples_yew".to_string()),
+        }
     }
 
     fn update(&mut self, msg: Self::Message) -> ShouldRender {
@@ -37,17 +40,17 @@ impl Component for Model {
     }
 
     fn view(&self) -> Html {
-        spawn_local(async move {
-            let result = pouch::new_db().await.unwrap_throw();
-            ConsoleService::info(&format!("New DB result: {:?}", result));
-        });
+        //spawn_local(async move {
+        //    let result = pouch::new_db().await.unwrap_throw();
+        //    ConsoleService::info(&format!("New DB result: {:?}", result));
+        //});
 
         html! {
             <div>
                 <button onclick=self.link.callback(|_| Msg::AddOne)>{ "+1" }</button>
                 <p>{ self.value }</p>
-                <p>{ pouch::get_version() }</p>
-                </div>
+                <p>{ self.db._get_version() }</p>
+            </div>
         }
     }
 }

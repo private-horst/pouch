@@ -2,6 +2,13 @@
 
 A simple Yew app using Pouch.
 
+- [x] Create new database
+- [ ] Get info about database
+- [ ] Store document
+- [ ] Change document
+- [ ] Delete document
+- [ ] Drop database
+
 Change into the example directory, ...
 ```shell
 cd examples/yew
