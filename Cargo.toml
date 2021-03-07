@@ -1,6 +1,6 @@
 [package]
 name = "pouch"
-version = "0.0.6-alpha"
+version = "0.0.7-alpha"
 authors = ["Horst Schwarz <horst.schwarz@joydev.com>"]
 edition = "2018"
 
