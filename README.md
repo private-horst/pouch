@@ -16,9 +16,9 @@ Current features, and such in progress:
 Quality aspects:
 
 - [x] Example with Yew
-- [x] ~~Regression tests with Node~~ (problems with pouchdb js exports)
-- [x] ~~Regression tests with Chrome~~ (problems with pouchdb js exports)
-- [ ] API documentation
+- [x] API documentation
+- [ ] ~~Regression tests with Node~~ (problems with pouchdb js exports)
+- [ ] ~~Regression tests with Chrome~~ (problems with pouchdb js exports)
 
 ## Test
 

@@ -5,7 +5,7 @@ A simple Yew app using Pouch.
 Currently integrated Pouch features:
 
 - [x] Create/open database
-- [ ] Get database info
+- [x] Get database info
 - [ ] Create doc
 - [ ] Change doc
 - [ ] Delete doc
