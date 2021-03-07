@@ -309,7 +309,7 @@ checksum = "8b870d8c151b6f2fb93e84a13146138f05d02ed11c7e7c54f8826aaaf7c9f184"
 
 [[package]]
 name = "pouch"
-version = "0.0.4-alpha"
+version = "0.0.5-alpha"
 dependencies = [
  "js-sys",
  "serde",
@@ -326,6 +326,7 @@ dependencies = [
  "wasm-bindgen",
  "wasm-bindgen-futures",
  "yew",
+ "yewtil",
 ]
 
 [[package]]
@@ -559,4 +560,17 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn",
+]
+
+[[package]]
+name = "yewtil"
+version = "0.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "003f4f533ee696c1f69d753db2c66096dec5700a93bd0bc801ab5891fec041c6"
+dependencies = [
+ "futures",
+ "log",
+ "wasm-bindgen",
+ "wasm-bindgen-futures",
+ "yew",
 ]
