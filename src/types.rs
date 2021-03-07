@@ -3,7 +3,7 @@ use std::convert::TryFrom;
 use wasm_bindgen::JsValue;
 
 #[derive(Deserialize, Debug)]
-pub struct InfoResponse {
+pub struct DatabaseInfo {
     pub doc_count: i32,
     pub update_seq: i32,
     pub idb_attachment_format: String,
@@ -12,10 +12,10 @@ pub struct InfoResponse {
     pub adapter: String,
 }
 
-impl TryFrom<JsValue> for InfoResponse {
+impl TryFrom<JsValue> for DatabaseInfo {
     type Error = crate::errors::Error;
     fn try_from(value: JsValue) -> Result<Self, Self::Error> {
-        let info: InfoResponse = value.into_serde().unwrap();
+        let info: DatabaseInfo = value.into_serde().unwrap();
         Ok(info)
     }
 }
