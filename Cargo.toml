@@ -6,7 +6,7 @@ edition = "2018"
 
 description = "Rust PouchDB bindings for WASM"
 documentation = "https://docs.rs/pouch"
-homepage = "https://www.pouch.rs"
+homepage = "https://pouch.rs"
 repository = "https://github.com/joydev-horst/pouch"
 license = "MIT"
 

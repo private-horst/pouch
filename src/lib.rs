@@ -35,7 +35,7 @@ pub fn version() -> &'static str {
 ///
 /// ```
 /// # #![allow(unused_imports)]
-/// use yew::pouch::*;
+/// use pouch::prelude::*;
 /// ```
 pub mod prelude {
     pub use crate::database::Database;
