@@ -12,7 +12,7 @@ pub mod types;
 pub mod errors;
 
 /// Bindings to the PouchDB module
-mod js_pouchdb;
+mod pouchdb;
 
 /// Utils like logging
 mod utils;

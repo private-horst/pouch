@@ -7,7 +7,7 @@ use pouch::*;
 // #[wasm_bindgen_test]
 async fn _test_get_name() {
     let db_name = "tests_new_node";
-    let db = DB::new(db_name.to_string());
+    let db = Database::new(db_name);
     let info = db.info().await.unwrap();
-    assert_eq!(info.name, db_name);
+    assert_eq!(info.db_name, db_name);
 }

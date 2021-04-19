@@ -2,7 +2,7 @@ use std::convert::TryInto;
 use wasm_bindgen_futures::JsFuture;
 
 use crate::errors::Error;
-use crate::js_pouchdb::bindings::PouchDB;
+use crate::pouchdb::bindings::PouchDB;
 use crate::types::DatabaseInfo;
 use crate::utils::log;
 
